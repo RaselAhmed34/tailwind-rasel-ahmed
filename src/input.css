@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  @apply mx-auto;
+}
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h6,
+  a {
+    font-family: Montserrat, system-ui, sans-serif;
+  }
+}
+
+body {
+  font-family: Poppins;
+}
+.box-bg {
+  background: linear-gradient(145deg, #1e2024, #23272b);
+}
+.box-shadow {
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+}
+
+.hero-box-before:before {
+  position: absolute;
+  left: 0;
+  background: linear-gradient(145deg, #1e2024, #23272b);
+  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+  width: 100%;
+  bottom: 0;
+  height: 100%;
+  content: "";
+  z-index: -1;
+  height: calc(92% - 131px);
+  border-radius: 6px;
+}
